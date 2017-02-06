@@ -27,7 +27,7 @@ document.onkeyup = function(event){
 		letterGuessed = letterGuessed  + letter;
 		document.getElementById("lettersG").innerHTML = letterGuessed;
 	}
-	if (alpha.indexOf(letter)<= 0 ){
+	if (alpha.indexOf(letter)< 0 ){
 		alert("You can only use keys A-Z.")
 	}
 	
@@ -48,7 +48,10 @@ document.onkeyup = function(event){
 		wins += 1;
 		document.getElementById("wins").innerHTML = wins;
 		guessLeft = 15;
+		document.getElementById("guessLeft").innerHTML = guessLeft;
 		letterGuessed = "";
+		document.getElementById("lettersG").innerHTML = letterGuessed;
+
 		
 	}
 	if (letterGuessed == ""){
